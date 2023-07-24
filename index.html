@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img class="img1" src="https://cdn.pixabay.com/photo/2021/04/29/13/03/cow-6216586_960_720.png">
+    <img class="img2"
+        src="https://1.bp.blogspot.com/-f3Ce1gouSTw/XcoBsfY2_NI/AAAAAAAJgPY/iyCr-5sS2OsGpAnbvDckX8TSOS8mucxDQCLcBGAsYHQ/s1600/MDRgMXE0SWoFA2DFzo1Qm6zGmM4.png">
+    <img class="img3" src="http://clipart-library.com/images_k/goat-transparent-png/goat-transparent-png-10.png" alt="">
+    <img class="img4" src="http://workplaceinsight.net/wp-content/uploads/2017/06/General-election-pigs-ear.png">
+    <img class="img5"
+        src="https://1.bp.blogspot.com/-d1KIY5AVoyA/XSujeHKGZtI/AAAAAAAADsg/yA6p9hvVEEIsvXeV9C6q9KKZiegeqaOaQCLcBGAs/s1600/B%25C3%2593XER4.png">
+    <img class="img6"
+        src="https://www.mascotasanasydivertidas.com/wp-content/uploads/sites/12/2020/11/gato.png?resize=200">
+    <img class="img7" src="https://www.pnguniverse.com/wp-content/uploads/2022/03/Cabeza-de-gallo-27603996.png">
+    <img class="img8" src="https://intranet.semillasjarad.es/uploads/12-CONEJOS.png">
+    <img class="img9" src="https://pngimg.com/uploads/parrot/parrot_PNG716.png">
+
+    <div class="container">
+        <h1>ADMINISTRADOR DE PACIENTES DE VETERINARIA</h1>
+        <hr>
+
+        <div id="filtro">
+            <h4 id="fil">Organizar por:</h4>
+            <label for="abi" class="botonsitos"><input type="radio" name="filtro" id="abi" value="abierta" checked
+                    class="radio">Abiertas</label>
+            <label for="ter" class="botonsitos"><input type="radio" name="filtro" id="ter" value="terminado"
+                    class="radio">Terminadas</label>
+            <label for="anu" class="botonsitos"><input type="radio" name="filtro" id="anu" value="anulada"
+                    class="radio">Anuladas</label>
+
+            <button type="button" id="botonPrinci" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#exampleModal" onclick="crear()">
+                Diligenciar Formulario
+            </button>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Datos del paciente 🦴</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div>
+                        <div id="msj1">
+                            error
+                        </div>
+                        <div id="msj2">
+                            Registro exitoso
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <h6 class="validaciones"></h6>
+                        <label for="mascota">Mascota:</label>
+                        <input id="mascota" type="text" placeholder="Escriba el nombre de su mascota"><br><br>
+                        <label for="propietario">Propietario:</label>
+                        <input id="propietario" type="text" placeholder="Escriba el nombre del propietario"><br><br>
+                        <label for="telefono">Telefono:</label>
+                        <input id="telefono" type="number" placeholder="Escriba el telefono del propietario"><br><br>
+                        <label for="fecha">Fecha:</label>
+                        <input type="date" id="fecha" placeholder="dd/mm/aaaa"><br><br>
+                        <label for="hora">Hora:</label>
+                        <input type="time" id="hora" placeholder="--:-- -----"><br><br>
+                        <label for="tipo">Tipo:</label>
+                        <select name="id" id="tipo">
+                            <option value="" selected disabled>Seleccionar...</option>
+                            <option value="Gato">Gato</option>
+                            <option value="Perro">Perro</option>
+                            <option value="Conejo">Conejo</option>
+                            <option value="Caballo">Caballo</option>
+                            <option value="Vaca">Vaca</option>
+                            <option value="Toro">Toro</option>
+                            <option value="Cabra">Cabra</option>
+                            <option value="Cerdo">Cerdo</option>
+                            <option value="Gallo">Gallo</option>
+                            <option value="Gallina">Gallina</option>
+                            <option value="Loro">Loro</option>
+                        </select><br><br>
+                        <label for="sintoma">Sintomas:</label>
+                        <textarea name="textarea" id="sintomas" rows="4" cols="60"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="cerrar" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button onclick="guardar()" type="button" class="btn btn-primary" id="guardar">Guardar Cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+
+
+        <div class="cartas" id="cartas">
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
