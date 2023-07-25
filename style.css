@@ -1,6 +1,7 @@
 body {
     background-color: #002552;
     display: flex;
+    height: 100%;
 }
 
 img {
@@ -20,7 +21,8 @@ img {
     margin-top: 1.7%;
     margin-left: 17%;
 }
-.img3{
+
+.img3 {
     height: 100px;
     width: 100px;
     margin-top: 2.6%;
@@ -34,35 +36,35 @@ img {
     margin-left: 35%;
 }
 
-.img5{
+.img5 {
     height: 85px;
     width: 90px;
     margin-top: 3.7%;
     margin-left: 47%;
 }
 
-.img6{
+.img6 {
     height: 70px;
     width: 80px;
     margin-top: 4.8%;
     margin-left: 56%;
 }
 
-.img7{
+.img7 {
     height: 90px;
     width: 100px;
     margin-top: 3.7%;
     margin-left: 63%;
 }
 
-.img8{
+.img8 {
     height: 90px;
     width: 280px;
     margin-top: 3.3%;
     margin-left: 65%;
 }
 
-.img9{
+.img9 {
     height: 110px;
     width: 110px;
     margin-top: 4.7%;
@@ -70,7 +72,7 @@ img {
 }
 
 .container {
-    border: solid #5c3725 5px ;
+    border: solid #5c3725 5px;
     background-color: #e7d0be;
     height: 100%;
     margin-top: 10%;
@@ -106,11 +108,12 @@ select {
     box-shadow: 5px 5px 5px #002552;
 }
 
-.modal-content{
-background-color: #e7d0be;
-border: solid #5c3725 5px;
-border-radius: 0;
+.modal-content {
+    background-color: #e7d0be;
+    border: solid #5c3725 5px;
+    border-radius: 0;
 }
+
 h1 {
     color: #5c3725;
     font-family: initial;
@@ -126,13 +129,13 @@ hr {
     background-color: #002552;
 }
 
-.cartas{
+.cartas {
     margin: 0;
     height: 70%;
     width: 75%;
     margin-left: 2%;
     display: grid;
-    grid-template-columns: repeat(3,45%);
+    grid-template-columns: repeat(3, 45%);
 }
 
 .tarjeta {
@@ -179,8 +182,8 @@ h3 {
 }
 
 p {
-    margin:0;
-    height:auto;
+    margin: 0;
+    height: auto;
     color: #002552;
 }
 
@@ -190,11 +193,13 @@ p {
     height: auto;
     margin-left: 8%;
 }
-.fila{
- display: flex;
- flex-direction: row;
+
+.fila {
+    display: flex;
+    flex-direction: row;
 }
-.botones{
+
+.botones {
     display: flex;
     flex-direction: row;
     height: 5%;
@@ -214,7 +219,8 @@ p {
     width: 100px;
     height: 40px;
 }
-.form-select{
+
+.form-select {
     width: 120px;
     height: 40px;
     margin-left: 5%;
@@ -242,31 +248,32 @@ p {
     height: 60px;
 }
 
-#msj1{
-    color:red;
-    background-color:#d4a675;
+#msj1 {
+    color: red;
+    background-color: #d4a675;
     font-size: 25px;
     display: none;
     font-family: initial;
     font-size: 25px;
     text-align: center;
-  }
-  
-  #msj2{
-    color:green;
-    background-color:#d4a675;
+}
+
+#msj2 {
+    color: green;
+    background-color: #d4a675;
     font-size: 25px;
-    display:none;
+    display: none;
     font-family: initial;
     font-size: 30px;
     text-align: center;
-  }
-  #filtro{
+}
+
+#filtro {
     display: flex;
     flex-direction: row;
-  }
+}
 
-  .botonsitos{
+.botonsitos {
     display: flex;
     flex-direction: row;
     width: 15%;
@@ -274,40 +281,219 @@ p {
     font-family: initial;
     font-size: 23px;
     margin-top: 1%;
-    
-  }
-  h4{
+
+}
+
+h4 {
     margin-top: 0.90%;
     margin-left: 5%;
     width: 20%;
     color: #5c3725;
     font-family: initial;
     font-size: 30px;
-  }
-  .radio{
+}
+
+.radio {
     height: 40%;
     width: 30%;
     margin-top: 5%;
-  }
-  label{
-    color: #5c3725;
-    font-family: initial;
-    font-size: 20px;
-  }
-  input,select,textarea{
+}
+
+input,
+select,
+textarea {
     border: solid #5c3725;
-  }
-  #cerrar{
+}
+
+#cerrar {
     background-color: #d4a675;
     border: solid #5c3725;
     color: #5c3725;
     font-family: initial;
     font-size: 20px;
-  }
-  #guardar{
+}
+
+#guardar {
     background-color: #2d90ed;
     border: solid #002552;
     color: #002552;
     font-family: initial;
     font-size: 20px;
-  }
+}
+
+@media only screen and (max-width:1200px) {
+    .container {
+        margin-top: 11%;
+    }
+    .cartas {
+        display: grid;
+        grid-template-columns: repeat(2, 70%);
+    }
+
+    .esperi {
+        margin-left: 22%;
+    }
+
+    .botonsitos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #botonPrinci {
+        margin-top: 3%;
+        height: 40px;
+    }
+    .radio{
+        height: 30%;
+    }
+    .img2{
+        margin-left: 20%;
+    }
+    .img3{
+        margin-left: 30%;
+    }
+    .img4 {
+        margin-top: -50%;
+        margin-left: 35%;
+    }
+    .img5{
+        margin-left: 45%;
+    }
+    .img6{
+        margin-left: 58%;
+    }
+    .img7 {
+        margin-top: -50%;
+        margin-left: 63%;
+    }
+    .img8{
+        margin-left:60% ;
+    }
+}
+@media only screen and (max-width:1000px) and (min-width:801px){
+    .botonsitos {
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+    }
+
+    #botonPrinci {
+        position: absolute;
+        height: 40px;
+        margin-top: 7%;
+        margin-left: 15%;
+        width: 50%;
+    }
+    .esperi {
+        margin-left: 18%;
+    }
+    .container {
+        margin-top: 12%;
+    }
+    .img1{
+        margin-left: 4%;
+    }
+    .img2 {
+        margin-left: 20%;
+    }
+    
+    .img3 {
+        margin-top: -50%;
+    }
+    .img5 {
+        margin-left: 40%;
+    }
+    
+    .img6 {
+        margin-top: -50%;
+    }
+    
+    .img8 {
+        margin-left: 48%;
+    }
+    .img9{
+        margin-left: 78%;
+    }
+}
+@media only screen and (max-width:800px) {
+    .container {
+        margin-top: 14%;
+    }
+    .botonsitos {
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+    }
+    .cartas {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }
+    .esperi {
+        margin-left: 22%;
+    }
+    #botonPrinci {
+        width: 90%;
+    }
+    .img1{
+        margin-left: 0%;
+    }
+    .img2 {
+        margin-top: -50%;
+    }
+    .img3 {
+        margin-top: -50%;
+    }
+    .img5 {
+        margin-top: -50%;
+    }
+    .img6 {
+        margin-top: -50%;
+    }
+    .img8 {
+        margin-left: 26%;
+    }
+    .img9{
+        margin-left: 75%;
+    }
+    #filtro {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:600px) {
+    .container {
+        margin-top: 19%;
+    }
+    .img8 {
+        margin-top: -100%;
+    }
+    .cartas {
+        display: grid;
+        grid-template-columns: repeat(1, 150%);
+    }
+    .esperi {
+        margin-left: 40%;
+        margin-top: -12%;
+    }
+    textarea{
+        width: 100%;
+    }
+    h1 {
+        font-size: 20px;
+        margin-left: 2%;
+        margin-top: 6%;
+    }
+}
+@media only screen and (max-width:500px) {
+    .img1 {
+        margin-top: -50%;
+    }
+    .esperi {
+        margin-left: 40%;
+        margin-top: -12%;
+    }
+    .container {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
