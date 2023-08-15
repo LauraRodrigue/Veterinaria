@@ -342,7 +342,7 @@ function cambiar() {
   let id2;
   let estado = "abi"
   let tarjetas = [
-    {
+   /*  {
         id: 1,
         tipo: "Perro",
         nombre: "LULU",
@@ -351,10 +351,10 @@ function cambiar() {
         fecha: "2023-08-04",
         hora: "19:59",
         sintomas: "Dolor de cabeza"
-    }
+    } */
 ];
   let terminada=[
-    {
+    /* {
         id: 2,
         tipo: "Perro",
         nombre: "LUNA",
@@ -363,10 +363,10 @@ function cambiar() {
         fecha: "2023-08-04",
         hora: "19:59",
         sintomas: "Dolor de muela"
-    }
+    } */
 ]
   let anulada=[
-    {
+    /* {
         id: 3,
         tipo: "Perro",
         nombre: "LOL",
@@ -375,7 +375,7 @@ function cambiar() {
         fecha: "2023-08-04",
         hora: "19:59",
         sintomas: "Dolor de estomago"
-    }
+    } */
 ]
 
 
